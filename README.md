@@ -14,7 +14,7 @@ It exposes a single HTTP endpoint that takes an image URL and returns the domina
 ## Quick start
 
 ```bash
-docker run -d --name vibrant-colors -p 8765:8765 ghcr.io/PhoenixR49/vibrant-colors-api:latest
+docker run -d --name vibrant-colors -p 8765:8765 ghcr.io/phoenixr49/vibrant-colors-api:latest
 ```
 
 The API is now available at `http://localhost:8765`.
@@ -59,7 +59,7 @@ curl "http://localhost:8765/color?url=https://resources.tidal.com/images/9b03b8d
 The image is published to the GitHub Container Registry. Pull and run it directly, no build required:
 
 ```bash
-docker run -d --name vibrant-colors -p 8765:8765 --restart unless-stopped ghcr.io/PhoenixR49/vibrant-colors-api:latest
+docker run -d --name vibrant-colors -p 8765:8765 --restart unless-stopped ghcr.io/phoenixr49/vibrant-colors-api:latest
 ```
 
 Or with Docker Compose:
@@ -68,7 +68,7 @@ Or with Docker Compose:
 # docker-compose.yml
 services:
   vibrant-colors:
-    image: ghcr.io/PhoenixR49/vibrant-colors-api:latest
+    image: ghcr.io/phoenixr49/vibrant-colors-api:latest
     container_name: vibrant-colors
     ports:
       - "8765:8765"
